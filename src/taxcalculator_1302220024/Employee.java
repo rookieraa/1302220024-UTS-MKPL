@@ -24,10 +24,7 @@ public class Employee {
             this.employeeId = employeeId;
             this.info = info;
         }
-	/**
-	 * Fungsi untuk menentukan gaji bulanan pegawai berdasarkan grade kepegawaiannya (grade 1: 3.000.000 per bulan, grade 2: 5.000.000 per bulan, grade 3: 7.000.000 per bulan)
-	 * Jika pegawai adalah warga negara asing gaji bulanan diperbesar sebanyak 50%
-	 */
+	
 	
 	public void setMonthlySalary(int grade) {
 	int baseSalary = switch (grade) {
@@ -36,7 +33,7 @@ public class Employee {
 		case 3 -> 7_000_000;
 		default -> 0;
 	};
-	if (isForeigner) {
+	if (this.info.isIsForeigner()) {
 		baseSalary *= 1.5;
 	}
 	monthlySalary = (int) baseSalary;
