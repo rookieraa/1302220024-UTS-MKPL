@@ -5,6 +5,8 @@
 package taxcalculator_1302220024;
 
 public class TaxFunction {
+
+	
 	/**
 	 * Fungsi untuk menghitung jumlah pajak penghasilan pegawai yang harus dibayarkan setahun.
 	 * 
